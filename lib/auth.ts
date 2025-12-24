@@ -14,10 +14,10 @@ export const NEXT_AUTH_CONFIG = {
             console.log("credentials", credentials);
   
               return {
-                  id: "user1",
-                  name: "asd",
-                  userId: "asd",
-                  email: "ramdomEmail"
+                  id: credentials.id || "asd",
+                  name: credentials.username || "username",
+                  userId: "randomUserId",
+                  password: credentials.password || "  ",
               };
           },
         }),
